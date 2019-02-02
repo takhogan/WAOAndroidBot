@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/popo/Context.py" />
+    <bookmark url="file://$PROJECT_DIR$/popo/Context.py" line="194" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ae202702-ea08-4ff4-a878-0b46b79c6cf2" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1126190723">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="86" />
+          <entry key="project.open.time.10" value="17" />
+          <entry key="project.open.time.11" value="9" />
+          <entry key="project.open.time.12" value="4" />
+          <entry key="project.open.time.13" value="2" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.15" value="3" />
+          <entry key="project.open.time.16" value="2" />
+          <entry key="project.open.time.17" value="4" />
+          <entry key="project.open.time.18" value="5" />
+          <entry key="project.open.time.19" value="6" />
+          <entry key="project.open.time.20" value="4" />
+          <entry key="project.open.time.21" value="4" />
+          <entry key="project.open.time.22" value="4" />
+          <entry key="project.open.time.23" value="4" />
+          <entry key="project.open.time.24" value="2" />
+          <entry key="project.open.time.25" value="2" />
+          <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.28" value="1" />
+          <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.30" value="1" />
+          <entry key="project.open.time.33" value="1" />
+          <entry key="project.open.time.38" value="1" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.open.time.8" value="7" />
+          <entry key="project.open.time.9" value="17" />
+          <entry key="project.opened" value="105" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="Python Console" value="724" />
+          <entry key="py" value="82190" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="82914" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="png" value="6" />
+          <entry key="py" value="21" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Image" value="6" />
+          <entry key="Python" value="21" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/AssistantController.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+              <folding>
+                <element signature="e#11#27#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/MapManager.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/util/MapNavigator.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3579">
+              <caret line="787" column="23" lean-forward="true" selection-start-line="787" selection-start-column="23" selection-end-line="787" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+                <marker date="1549006323235" expanded="true" signature="1220:1250" ph="..." />
+                <marker date="1549006323235" expanded="true" signature="5559:5561" ph="..." />
+                <marker date="1549006323235" expanded="true" signature="5722:6440" ph="..." />
+                <marker date="1549006323235" expanded="true" signature="10932:10971" ph="..." />
+                <marker date="1549006323235" expanded="true" signature="11083:11130" ph="..." />
+                <marker date="1549006323235" expanded="true" signature="11127:11130" ph="..." />
+                <marker date="1549006323235" expanded="true" signature="11256:11272" ph="..." />
+                <marker date="1549006323235" expanded="true" signature="11342:11360" ph="..." />
+                <marker date="1549006323235" expanded="true" signature="12753:13171" ph="..." />
+                <marker date="1549006323235" expanded="true" signature="13288:30720" ph="..." />
+                <marker date="1549006323235" expanded="true" signature="13335:30720" ph="..." />
+                <marker date="1549006323235" expanded="true" signature="13419:13522" ph="..." />
+                <marker date="1549006323235" expanded="true" signature="14920:14922" ph="..." />
+                <marker date="1549006323235" expanded="true" signature="14974:15528" ph="..." />
+                <marker date="1549006323235" expanded="true" signature="15526:15528" ph="..." />
+                <marker date="1549006323235" expanded="true" signature="17574:28522" ph="..." />
+                <marker date="1549006323235" expanded="true" signature="18746:20976" ph="..." />
+                <marker date="1549006323235" expanded="true" signature="20101:20976" ph="..." />
+                <marker date="1549006323235" expanded="true" signature="23908:23909" ph="..." />
+                <marker date="1549006323235" expanded="true" signature="23908:24079" ph="..." />
+                <marker date="1549006323235" expanded="true" signature="24111:24642" ph="..." />
+                <marker date="1549006323235" expanded="true" signature="25190:28522" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/LegacyCode.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="11968">
+              <caret line="704" column="21" selection-start-line="704" selection-start-column="21" selection-end-line="704" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/ImageMatcher.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="502">
+              <caret line="75" column="21" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
+              <folding>
+                <element signature="e#103#113#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/popo/Context.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-40001">
+              <caret line="371" column="43" selection-start-line="371" selection-start-column="43" selection-end-line="371" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+                <marker date="1548443392411" expanded="true" signature="275:317" ph="..." />
+                <marker date="1548443392411" expanded="true" signature="851:1409" ph="..." />
+                <marker date="1548443392411" expanded="true" signature="85191:85463" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>battlerebels1</find>
+      <find>reset_context</find>
+      <find>alliancetechview</find>
+      <find>click</find>
+      <find>def click</find>
+      <find>def click\(</find>
+      <find>process_battle</find>
+      <find>process_battlerebels</find>
+      <find>alliancetech</find>
+      <find>default_context</find>
+      <find>blank_timeout</find>
+      <find>detect_topmailview</find>
+      <find>process_alliancestatus_mail</find>
+      <find>topmailview</find>
+      <find>process_mailrewards</find>
+      <find>process_alliancestatus_mailrewards</find>
+      <find>process_accounts</find>
+      <find>process{a</find>
+      <find>detect\_c</find>
+      <find>detect_cityview</find>
+      <find>waoserverfetch</find>
+      <find>mapview</find>
+      <find>alliancedonateview</find>
+      <find>process_account</find>
+      <find>altaltadview</find>
+      <find>proess</find>
+      <find>process</find>
+      <find>waoserver</find>
+      <find>default</find>
+      <find>blockers</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>specificarea</replace>
+      <replace>origin</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/AccountPair.py" />
+        <option value="$PROJECT_DIR$/RallyGroup.py" />
+        <option value="$PROJECT_DIR$/Account.py" />
+        <option value="$PROJECT_DIR$/MapManager.py" />
+        <option value="$PROJECT_DIR$/SystemVars.py" />
+        <option value="$PROJECT_DIR$/Lane.py" />
+        <option value="$PROJECT_DIR$/MapNavigator.py" />
+        <option value="$PROJECT_DIR$/popo/Box.py" />
+        <option value="$PROJECT_DIR$/popo/Lane.py" />
+        <option value="$PROJECT_DIR$/tests/tests.py" />
+        <option value="$PROJECT_DIR$/tests/Backups.py" />
+        <option value="$PROJECT_DIR$/tests/Tests.py" />
+        <option value="$PROJECT_DIR$/BotController.py" />
+        <option value="$PROJECT_DIR$/util/MapManager.py" />
+        <option value="$PROJECT_DIR$/tools/AssistantController.py" />
+        <option value="$PROJECT_DIR$/popo/Color.py" />
+        <option value="$PROJECT_DIR$/popo/Button.py" />
+        <option value="$PROJECT_DIR$/config/SystemVars.py" />
+        <option value="$PROJECT_DIR$/util/LegacyCode.py" />
+        <option value="$PROJECT_DIR$/util/ImageMatcher.py" />
+        <option value="$PROJECT_DIR$/util/AssistantController.py" />
+        <option value="$PROJECT_DIR$/popo/Context.py" />
+        <option value="$PROJECT_DIR$/util/MapNavigator.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="9" />
+    <option name="y" value="-21" />
+    <option name="width" value="2586" />
+    <option name="height" value="1626" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Python</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PyProtocolInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="WAOAndroidBot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WAOAndroidBot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WAOAndroidBot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WAOAndroidBot" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WAOAndroidBot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WAOAndroidBot" type="462c0819:PsiDirectoryNode" />
+              <item name="popo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WAOAndroidBot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WAOAndroidBot" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WAOAndroidBot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WAOAndroidBot" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/util/AssistantController.py" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="WAOAndroidBot" sdk-home="$USER_HOME$/.virtualenvs/cv/bin/python" working-directory="$PROJECT_DIR$">
+        <option name="mySdkHome" value="$USER_HOME$/.virtualenvs/cv/bin/python" />
+        <option name="myModuleName" value="WAOAndroidBot" />
+        <option name="myWorkingDirectory" value="$PROJECT_DIR$" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.MapNavigator">
+    <configuration default="true" type="Python.Ipnb" factoryName="Jupyter Notebook">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/bin/python3.7" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="WAOAndroidBot" />
+      <option name="additionalOptions" value="" />
+      <option name="ipnbHost" value="127.0.0.1" />
+      <option name="ipnbPort" value="8888" />
+    </configuration>
+    <configuration name="AssistantController" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="WAOAndroidBot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/util" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/AssistantController.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="MapNavigator" type="PythonConfigurationType" factoryName="Python">
+      <module name="WAOAndroidBot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\takhogan\Documents\PycharmProjects\WAOAndroidBot\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/util" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/MapNavigator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="WAOBot" type="PythonConfigurationType" factoryName="Python">
+      <module name="WAOAndroidBot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/.virtualenvs/cv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BotController.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="WAOAndroidBot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/.virtualenvs/cv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BotController.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Nosetests in MapNavigator.py" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+      <module name="WAOAndroidBot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/util" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/util/MapNavigator.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Nosetests in Tests.py" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+      <module name="WAOAndroidBot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/Tests.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.WAOBot" />
+      <item itemvalue="Python.MapNavigator" />
+      <item itemvalue="Python.AssistantController" />
+      <item itemvalue="Python tests.Nosetests in MapNavigator.py" />
+      <item itemvalue="Python tests.Nosetests in Tests.py" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.AssistantController" />
+        <item itemvalue="Python tests.Nosetests in Tests.py" />
+        <item itemvalue="Python tests.Nosetests in MapNavigator.py" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ae202702-ea08-4ff4-a878-0b46b79c6cf2" name="Default" comment="" />
+      <created>1533897534751</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1533897534751</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Nosetests_in_MapNavigator_py - 2018.08.14 at 16h 48m 12s.xml">
+      <configuration name="Nosetests in MapNavigator.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_MapNavigator_py - 2018.08.14 at 16h 50m 27s.xml">
+      <configuration name="Nosetests in MapNavigator.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_MapNavigator_py - 2018.08.14 at 16h 51m 26s.xml">
+      <configuration name="Nosetests in MapNavigator.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_MapNavigator_py - 2018.08.15 at 13h 37m 45s.xml">
+      <configuration name="Nosetests in MapNavigator.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_MapNavigator_py - 2018.08.15 at 13h 38m 48s.xml">
+      <configuration name="Nosetests in MapNavigator.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_MapNavigator_py - 2018.08.15 at 13h 49m 58s.xml">
+      <configuration name="Nosetests in MapNavigator.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_MapNavigator_py - 2018.08.15 at 13h 56m 09s.xml">
+      <configuration name="Nosetests in MapNavigator.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_MapNavigator_py - 2018.08.15 at 13h 57m 01s.xml">
+      <configuration name="Nosetests in MapNavigator.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_MapNavigator_py - 2018.08.15 at 13h 58m 10s.xml">
+      <configuration name="Nosetests in MapNavigator.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_Tests_py - 2018.08.15 at 14h 26m 12s.xml">
+      <configuration name="Nosetests in Tests.py" configurationId="tests" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1721" height="1041" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.16607635" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32885906" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48099762" weight="0.3542354" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.2750275" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49881235" weight="0.32893288" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5190024" side_tool="true" weight="0.50935096" />
+      <window_info anchor="bottom" id="Python Console" order="8" sideWeight="0.4976247" weight="0.2970297" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4994062" weight="0.24642465" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Data View" order="3" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/AccountPair.py" />
+    <entry file="file://$PROJECT_DIR$/AccountGroup.py" />
+    <entry file="file://$PROJECT_DIR$/RallyGroup.py" />
+    <entry file="file://$PROJECT_DIR$/Account.py" />
+    <entry file="file://$PROJECT_DIR$/MapManager.py" />
+    <entry file="file://$PROJECT_DIR$/Lane.py" />
+    <entry file="file://$PROJECT_DIR$/MapNavigator.py" />
+    <entry file="file://$PROJECT_DIR$/SystemVars.py" />
+    <entry file="file://$PROJECT_DIR$/util/ScreenShotUtil.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/TextMatcher.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/_jb_nosetest_runner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/popo/Box.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/popo/Lane.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="45" lean-forward="true" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/cv/lib/python3.7/site-packages/nose/case.py" />
+    <entry file="file://$PROJECT_DIR$/popo/AccountGroup.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/cv/lib/python3.7/site-packages/PIL/ImageFile.py" />
+    <entry file="file://$PROJECT_DIR$/tests/Tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Backups.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/popo/RallyGroup.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BotController.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/appicon-button-area.png" />
+    <entry file="file://$PROJECT_DIR$/util/set_context_debug17.png" />
+    <entry file="file://$PROJECT_DIR$/util/set_context_debug27.png" />
+    <entry file="file://$PROJECT_DIR$/util/set_context_debug70.png" />
+    <entry file="file://$PROJECT_DIR$/util/set_context_debug78.png" />
+    <entry file="file://$PROJECT_DIR$/util/set_context_debug81.png" />
+    <entry file="file://C:/Program Files (x86)/Python37-32/Lib/random.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/PIL/Image.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="1941" column="43" lean-forward="true" selection-start-line="1941" selection-start-column="43" selection-end-line="1941" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/AssistantController.py" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/PIL/ImageFile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="468" column="11" lean-forward="true" selection-start-line="468" selection-start-column="11" selection-end-line="468" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/popo/Color.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/SystemVars.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/popo/Button.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/AssistantController.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <element signature="e#11#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/MapManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/LegacyCode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11968">
+          <caret line="704" column="21" selection-start-line="704" selection-start-column="21" selection-end-line="704" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/popo/Context.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-40001">
+          <caret line="371" column="43" selection-start-line="371" selection-start-column="43" selection-end-line="371" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <marker date="1548443392411" expanded="true" signature="275:317" ph="..." />
+            <marker date="1548443392411" expanded="true" signature="851:1409" ph="..." />
+            <marker date="1548443392411" expanded="true" signature="85191:85463" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/ImageMatcher.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="75" column="21" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
+          <folding>
+            <element signature="e#103#113#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/MapNavigator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3579">
+          <caret line="787" column="23" lean-forward="true" selection-start-line="787" selection-start-column="23" selection-end-line="787" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <marker date="1549006323235" expanded="true" signature="1220:1250" ph="..." />
+            <marker date="1549006323235" expanded="true" signature="5559:5561" ph="..." />
+            <marker date="1549006323235" expanded="true" signature="5722:6440" ph="..." />
+            <marker date="1549006323235" expanded="true" signature="10932:10971" ph="..." />
+            <marker date="1549006323235" expanded="true" signature="11083:11130" ph="..." />
+            <marker date="1549006323235" expanded="true" signature="11127:11130" ph="..." />
+            <marker date="1549006323235" expanded="true" signature="11256:11272" ph="..." />
+            <marker date="1549006323235" expanded="true" signature="11342:11360" ph="..." />
+            <marker date="1549006323235" expanded="true" signature="12753:13171" ph="..." />
+            <marker date="1549006323235" expanded="true" signature="13288:30720" ph="..." />
+            <marker date="1549006323235" expanded="true" signature="13335:30720" ph="..." />
+            <marker date="1549006323235" expanded="true" signature="13419:13522" ph="..." />
+            <marker date="1549006323235" expanded="true" signature="14920:14922" ph="..." />
+            <marker date="1549006323235" expanded="true" signature="14974:15528" ph="..." />
+            <marker date="1549006323235" expanded="true" signature="15526:15528" ph="..." />
+            <marker date="1549006323235" expanded="true" signature="17574:28522" ph="..." />
+            <marker date="1549006323235" expanded="true" signature="18746:20976" ph="..." />
+            <marker date="1549006323235" expanded="true" signature="20101:20976" ph="..." />
+            <marker date="1549006323235" expanded="true" signature="23908:23909" ph="..." />
+            <marker date="1549006323235" expanded="true" signature="23908:24079" ph="..." />
+            <marker date="1549006323235" expanded="true" signature="24111:24642" ph="..." />
+            <marker date="1549006323235" expanded="true" signature="25190:28522" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
