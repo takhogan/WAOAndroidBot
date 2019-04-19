@@ -109,6 +109,7 @@ class Context:
         return self.getbutton().waitforbuttonload()
 
     def waitforload(self, timeout = 5, ontimeout=None):
+        print('waitforload')
         while(not self.detect()):
             if(Context.detect_camelloadingscreen()):
                 print('detected camelloadingscreen')
@@ -127,6 +128,8 @@ class Context:
                         print('waiting for ' + self.getname()+' load... '+str(timeout))
                 else:
                     print(self.getname() + ' timed out!')
+                    debug_im = MN.full_screen_shot()
+                    debug_im.save(self.getname() + str(random.randint(0, 100)) + '-timeout.png')
                     if (ontimeout == None):
                         return self.return_context()
                     else:
@@ -139,6 +142,7 @@ class Context:
 
     @staticmethod
     def waitformultiload(contextlist, timeout = 5, ontimeout = None):
+        print('waitformultiload')
         timeoutstr = ''
         for context in contextlist:
             timeoutstr += context.name + ' '
@@ -364,12 +368,10 @@ class Context:
 
     @staticmethod
     def detect_camelloadingscreen():
-        Context.detect_camelloadingscreen.cxlist = [0.455, 0.57875, 0.4425, 0.24375, 0.39375, 0.63375, 0.8525]
-        Context.detect_camelloadingscreen.cylist = [0.74375, 0.5546875, 0.52578125, 0.50390625, 0.4328125, 0.46328125,
-                                            0.0796875]
-        Context.detect_camelloadingscreen.clist = [C.Color(0, 0, 0), C.Color(153, 51, 34), C.Color(255, 187, 34),
-                                           C.Color(153, 51, 34), C.Color(0, 0, 0), C.Color(255, 187, 34),
-                                           C.Color(0, 0, 0)]
+        Context.detect_camelloadingscreen.cxlist = [0.6475, 0.5525, 0.465, 0.23625, 0.2]
+        Context.detect_camelloadingscreen.cylist = [0.4484375, 0.5390625, 0.4859375, 0.45546875, 0.15078125]
+        Context.detect_camelloadingscreen.clist = [C.Color(255, 187, 34), C.Color(153, 51, 34), C.Color(255, 187, 34),
+                                           C.Color(153, 51, 34), C.Color(0, 0, 0)]
         return all(map(MN.color_comp, Context.detect_camelloadingscreen.cxlist, Context.detect_camelloadingscreen.cylist,
                        Context.detect_camelloadingscreen.clist))
     @staticmethod
@@ -379,6 +381,16 @@ class Context:
                 MN.color_comp(0.37625, 0.4765625, C.Color(238, 189, 121)) and \
                 MN.color_comp(0.71625, 0.46171875, C.Color(252, 220, 148)) and \
                 MN.color_comp(0.36625, 0.39765625, C.Color(209, 152, 88))
+
+    @staticmethod
+    def detect_new_waoserverfetch():
+        Context.detect_new_waoserverfetch.cxlist = [0.61375, 0.375, 0.155, 0.17375, 0.93, 0.92, 0.75875]
+        Context.detect_new_waoserverfetch.cylist = [0.1046875, 0.56328125, 0.7234375, 0.10625, 0.2546875, 0.86640625, 0.2140625]
+        Context.detect_new_waoserverfetch.clist = [C.Color(196, 160, 153), C.Color(8, 3, 3), C.Color(39, 40, 39),
+                                           C.Color(216, 193, 124), C.Color(107, 81, 62), C.Color(2, 2, 1),
+                                           C.Color(112, 145, 161)]
+        return all(map(MN.color_comp, Context.detect_new_waoserverfetch.cxlist, Context.detect_new_waoserverfetch.cylist,
+                       Context.detect_new_waoserverfetch.clist))
 
     @staticmethod
     def detect_winterwaoserverfetch():
@@ -401,8 +413,15 @@ class Context:
         Context.detect_waoserverfetch.clist = [C.Color(183, 154, 145), C.Color(73, 47, 41), C.Color(55, 47, 31),
                                        C.Color(26, 26, 26), C.Color(36, 42, 43), C.Color(7, 2, 1), C.Color(48, 49, 50),
                                        C.Color(43, 45, 48)]
+        newfetch = Context.detect_new_waoserverfetch()
+        if newfetch:
+            print('newfetch')
+        winterfetch = Context.detect_winterwaoserverfetch()
+        if winterfetch:
+            print('winterfetch')
         return all(
-            map(MN.color_comp, Context.detect_waoserverfetch.cxlist, Context.detect_waoserverfetch.cylist, Context.detect_waoserverfetch.clist)) or Context.detect_winterwaoserverfetch()
+            map(MN.color_comp, Context.detect_waoserverfetch.cxlist, Context.detect_waoserverfetch.cylist, Context.detect_waoserverfetch.clist)) \
+               or newfetch or winterfetch
 
     @staticmethod
     def detect_waocrash():
@@ -1484,6 +1503,14 @@ class Context:
             return all(map(MN.color_comp, detect_alttopmailview.cxlist, detect_alttopmailview.cylist,
                            detect_alttopmailview.clist))
 
+        def detect_updatetopmailview():
+            detect_updatetopmailview.cxlist = [0.38625, 0.60125, 0.9175, 0.89125, 0.18875, 0.4475]
+            detect_updatetopmailview.cylist = [0.9359375, 0.934375, 0.6125, 0.18515625, 0.12109375, 0.68359375]
+            detect_updatetopmailview.clist = [C.Color(52, 77, 4), C.Color(54, 79, 2), C.Color(211, 186, 143),
+                                              C.Color(209, 185, 142), C.Color(210, 185, 142), C.Color(189, 165, 126)]
+            return all(map(MN.color_comp, detect_updatetopmailview.cxlist, detect_updatetopmailview.cylist,
+                           detect_updatetopmailview.clist))
+
         def detect_topmailview():
             detect_topmailview.cxlist = [0.3575, 0.26875, 0.94875, 0.1425, 0.595, 0.86125, 0.12625]
             detect_topmailview.cylist = [0.03046875, 0.11484375, 0.12109375, 0.3046875, 0.92890625, 0.9328125,
@@ -1493,7 +1520,7 @@ class Context:
                                         C.Color(212, 187, 144)]
             return all(
                 map(MN.color_comp, detect_topmailview.cxlist, detect_topmailview.cylist, detect_topmailview.clist)) or \
-                   detect_alttopmailview() or detect_postcollecttopmailview()
+                   detect_alttopmailview() or detect_postcollecttopmailview() or detect_updatetopmailview()
 
         topmailview = Context("topmailview", topmailviewbutton, detect_topmailview)
         topmailview.add_connection(mailrewardview)
@@ -1571,7 +1598,10 @@ class Context:
                     detect_alliancestatusmailviewbutton.clist))
 
         def click_alliancestatusmailviewbutton():
-            MN.click_screen_area(0.035, 0.33203125, 0.95125, 0.43828125)
+            if detect_alliancestatusmailviewbutton():
+                MN.click_screen_area(0.035, 0.33203125, 0.95125, 0.43828125)
+            else:
+                MN.click_screen_area(0.25, 0.2, 0.7425, 0.28984375)
 
         alliancestatusmailviewbutton = B.Button(detect_alliancestatusmailviewbutton, click_alliancestatusmailviewbutton)
 
@@ -1683,60 +1713,60 @@ class Context:
         allianceeliteminescrollviewbutton = B.Button(None, click_allianceeliteminescrollview)
         allianceeliteminescrollview = Context('allianceeliteminescrollview', allianceeliteminescrollviewbutton, detect_finisheliteminescroll)
 
-        def find_allianceelitewoodview(debug=True, fullcoord = True):
+        def find_allianceelitewoodview(template, debug=False, fullcoord = True):
             scanpath = 'images/results/allianceelitewoodview.png'
             im = MN.full_screen_shot()
             im.save(scanpath, 'PNG')
             if (debug):
-                return IM.match_template_debug(scanpath, ['images/templates/elitewoodview.png'],
+                return IM.match_template_debug(scanpath, [template],
                                                'allianceelitewoodview', threshold = 0.7, fullcoord=fullcoord)
             return IM.match_template(scanpath, ['images/templates/elitewoodview.png'], threshold = 0.7, fullcoord=fullcoord)
 
 
         allianceelitewoodview = ImageContext("allianceelitewoodview", detect_mapview,
-                                             find_allianceelitewoodview)
+                                             find_allianceelitewoodview, ['images/templates/elitewoodview.png'])
         allianceelitewoodview.add_connection(allianceeliteminescrollview)
 
 
-        def find_allianceelitefoodview(debug=True, fullcoord = True):
+        def find_allianceelitefoodview(template, debug=True, fullcoord = True):
             scanpath = 'images/results/allianceelitefarmview.png'
             im = MN.full_screen_shot()
             im.save(scanpath, 'PNG')
             if (debug):
-                return IM.match_template_debug(scanpath, ['images/templates/elitefarmview.png'],
+                return IM.match_template_debug(scanpath, [template],
                                                'allianceelitefarmview', threshold = 0.7, fullcoord=fullcoord)
             return IM.match_template(scanpath, ['images/templates/elitefarmview.png'], threshold = 0.7, fullcoord=fullcoord)
 
 
         allianceelitefoodview = ImageContext("allianceelitefoodview", detect_mapview,
-                                             find_allianceelitefoodview)
+                                             find_allianceelitefoodview, ['images/templates/elitefarmview.png'])
         allianceelitefoodview.add_connection(allianceeliteminescrollview)
 
-        def find_allianceelitestoneview(debug=True, fullcoord = True):
+        def find_allianceelitestoneview(template, debug=True, fullcoord = True):
             scanpath = 'images/results/elitestoneallianceview.png'
             im = MN.full_screen_shot()
             im.save(scanpath, 'PNG')
             if (debug):
-                return IM.match_template_debug(scanpath, ['images/templates/elitestoneallianceview.png'],
+                return IM.match_template_debug(scanpath, [template],
                                                'elitestoneallianceview', threshold=0.7, fullcoord=fullcoord)
             return IM.match_template(scanpath, ['images/templates/elitestoneallianceview.png'], threshold=0.7, fullcoord=fullcoord)
 
         allianceelitestoneview = ImageContext("allianceelitestoneview", detect_mapview,
-                                         find_allianceelitestoneview)
+                                         find_allianceelitestoneview, ['images/templates/elitestoneallianceview.png'])
         allianceelitestoneview.add_connection(allianceeliteminescrollview)
 
-        def find_allianceeliteironview(debug=True, fullcoord = True):
+        def find_allianceeliteironview(template, debug=True, fullcoord = True):
             scanpath = 'images/results/eliteironallianceview.png'
             im = MN.full_screen_shot()
             im.save(scanpath, 'PNG')
             if (debug):
-                return IM.match_template_debug(scanpath, ['images/templates/eliteironallianceview.png'],
+                return IM.match_template_debug(scanpath, [template],
                                                'eliteironallianceview', threshold=0.7, fullcoord=fullcoord)
             return IM.match_template(scanpath, ['images/templates/eliteironallianceview.png'], threshold=0.7, fullcoord=fullcoord)
 
 
         allianceeliteironview = ImageContext("allianceeliteironview", detect_mapview,
-                                             find_allianceeliteironview)
+                                             find_allianceeliteironview, ['images/templates/eliteironallianceview.png'])
         allianceeliteironview.add_connection(allianceeliteminescrollview)
 
         def detect_alliancebuildinghallviewbutton():
@@ -2262,7 +2292,7 @@ class Context:
             elif (harvestskillview.name == 'harvestskillcooldownview'):
                 print('harvest already collected')
                 harvestskillcooldownview.waitforload()
-                click_harvestskillharvestviewbutton()
+                click_dailyrewardreceiptviewbutton()
 
         harvestskillviewbutton = B.Button(detect_harvestskillviewbutton, click_harvestskillviewbutton)
 
@@ -2427,91 +2457,97 @@ class Context:
         lowerright.add_connection(lowermiddle)
 
 
-        def find_stonequarryview(debug=False):
+        def find_stonequarryview(template, debug=False):
             scanpath = 'images/results/stonequarryview.png'
             im = MN.full_screen_shot()
 
             im.save(scanpath, 'PNG')
             if(debug):
                 return IM.match_template_debug(scanpath,
-                                        ['images/templates/stonequarry1.png', 'images/templates/stonequarry2.png'],
+                                        [template],
                                         'stonequarry_find',
                                         threshold = 0.7)
             return IM.match_template(scanpath,
-                                     ['images/templates/stonequarry1.png', 'images/templates/stonequarry2.png'],
+                                     [template],
                                      threshold = 0.7)
 
 
-        stonequarryview = ImageContext("stonequarryview", None, find_stonequarryview)
+        stonequarryview = ImageContext("stonequarryview", None, find_stonequarryview,['images/templates/stonequarry1.png',
+                                                                                      'images/templates/stonequarry2.png',
+                                                                                      'images/templates/stoneview_alt.png'])
 
-        def find_ironmineview(debug=False):
+        def find_ironmineview(template, debug=False):
             scanpath = 'images/results/ironmineview.png'
             im = MN.full_screen_shot()
 
             im.save(scanpath, 'PNG')
             if(debug):
                 return IM.match_template_debug(scanpath,
-                                        ['images/templates/ironmine2.png', 'images/templates/ironmine1.png',
-                                         'images/templates/ironmineedge1.png', 'images/templates/ironmineedge2.png'],
+                                        [template],
                                         'ironmine_find',
                                         threshold = 0.7)
             return IM.match_template(scanpath,
-                                     ['images/templates/ironmine2.png', 'images/templates/ironmine1.png',
-                                      'images/templates/ironmineedge1.png', 'images/templates/ironmineedge2.png'],
+                                     [template],
                                      threshold = 0.7)
 
 
-        ironmineview = ImageContext("ironmineview", None, find_ironmineview)
+        ironmineview = ImageContext("ironmineview", None, find_ironmineview,['images/templates/ironmine2.png',
+                                                                             'images/templates/ironmine1.png',
+                                                                             'images/templates/ironmineedge1.png',
+                                                                             'images/templates/ironmineedge2.png'])
 
-        def find_foodfarmview(debug=False):
+        def find_foodfarmview(template, debug=False):
             scanpath = 'images/results/foodfarmview.png'
             im = MN.full_screen_shot()
 
             im.save(scanpath, 'PNG')
             if(debug):
                 return IM.match_template_debug(scanpath,
-                                        ['images/templates/foodfarm1.png', 'images/templates/foodfarm2.png'],
+                                        [template],
                                         'foodfarm_find',
                                         threshold = 0.7)
             return IM.match_template(scanpath,
-                                     ['images/templates/foodfarm1.png', 'images/templates/foodfarm2.png'],
+                                     [template],
                                      threshold = 0.7)
 
 
-        foodfarmview = ImageContext("foodfarmview", None, find_foodfarmview)
+        foodfarmview = ImageContext("foodfarmview", None, find_foodfarmview, ['images/templates/foodfarm1.png',
+                                                                              'images/templates/foodfarm2.png'])
 
-        def find_woodyardview(debug=False):
+        def find_woodyardview(template, debug=False):
             scanpath = 'images/results/woodyardview.png'
             im = MN.full_screen_shot()
 
             im.save(scanpath, 'PNG')
             if(debug):
                 return IM.match_template_debug(scanpath,
-                                        ['images/templates/woodyard1.png', 'images/templates/woodyard2.png'],
+                                        [template],
                                         'woodyard_find',
                                         threshold = 0.7)
             return IM.match_template(scanpath,
-                                     ['images/templates/woodyard1.png', 'images/templates/woodyard2.png'],
+                                     [template],
                                      threshold = 0.7)
 
 
 
-        woodyardview = ImageContext("woodyardview", None, find_woodyardview)
+        woodyardview = ImageContext("woodyardview", None, find_woodyardview, ['images/templates/woodyard1.png',
+                                                                              'images/templates/woodyard2.png'])
 
 
 
-        def find_woodtileview():
+        def find_woodtileview(template):
             scanpath = 'images/woodtileview.png'
             im = MN.full_screen_shot()
             im.save(scanpath, 'PNG')
             return IM.match_template_debug(scanpath,
-                                     ['images/templates/woodtile_brown.png', 'images/templates/woodtile_green.png',
-                                      'images/templates/woodtile_yellow.png'], 'woodtileview')
+                                     [template], 'woodtileview')
 
 
 
 
-        woodtileview = ImageContext("woodtileview", None, find_woodtileview)
+        woodtileview = ImageContext("woodtileview", None, find_woodtileview,['images/templates/woodtile_brown.png',
+                                                                             'images/templates/woodtile_green.png',
+                                                                             'images/templates/woodtile_yellow.png'])
 
         def detect_goldenhammerreturnview():
             detect_goldenhammerreturnview.cxlist = [0.375]
@@ -2585,12 +2621,12 @@ class Context:
         rewardscartreturnviewbutton = B.Button(None, click_rewardscartreturnviewbutton)
 
 
-        def find_rewardscartview(debug=True):
+        def find_rewardscartview(template, debug=True):
             scanpath = 'images/results/rewardscartview.png'
             im = MN.full_screen_shot()
             im.save(scanpath, 'PNG')
             if (debug):
-                return IM.match_template_debug(scanpath, ['images/templates/rewardscartwide.png'], 'rewardscartview')
+                return IM.match_template_debug(scanpath, [template], 'rewardscartview')
             return IM.match_template(scanpath,
                                      ['images/templates/rewardscartwide.png'])
 
@@ -2603,20 +2639,18 @@ class Context:
             return all(map(MN.color_comp, detect_rewardscartreceiptview.cxlist, detect_rewardscartreceiptview.cylist,
                            detect_rewardscartreceiptview.clist))
 
-        rewardscartview = ImageContext('rewardscartview', None, find_rewardscartview)
+        rewardscartview = ImageContext('rewardscartview', None, find_rewardscartview, ['images/templates/rewardscartwide.png'])
         rewardscartreceiptview = Context('rewardscartreceiptview', None, detect_rewardscartreceiptview)
         rewardscartview.add_connection(rewardscartreceiptview)
 
-        def find_alliancequestview(debug=True):
+        def find_alliancequestview(template, debug=True):
             scanpath = 'images/results/alliancequestview.png'
             im = MN.full_screen_shot()
             im.save(scanpath, 'PNG')
             if (debug):
-                return IM.match_template_debug(scanpath, ['images/templates/alliancequestview1.png',
-                                                          'images/templates/alliancequestviewwide.png'],
+                return IM.match_template_debug(scanpath, [template],
                                                'alliancequestview', threshold=0.65)
-            return IM.match_template(scanpath, ['images/templates/alliancequestview1.png',
-                                                'images/templates/alliancequestviewwide.png'], threshold=0.65)
+            return IM.match_template(scanpath, [template], threshold=0.65)
 
         def detect_alliancequestview():
             alliancequestview.cxlist = [0.36875, 0.6625, 0.3475, 0.155, 0.1925, 0.08375, 0.3625, 0.35625, 0.36875,
@@ -2629,7 +2663,8 @@ class Context:
                                        C.Color(63, 91, 6), C.Color(16, 13, 9)]
             return all(map(MN.color_comp, alliancequestview.cxlist, alliancequestview.cylist, alliancequestview.clist))
 
-        alliancequestview = ImageContext("alliancequestview", detect_alliancequestview, find_alliancequestview)
+        alliancequestview = ImageContext("alliancequestview", detect_alliancequestview, find_alliancequestview, ['images/templates/alliancequestview1.png',
+                                                          'images/templates/alliancequestviewwide.png'])
 
         def detect_alliancequestcollectview():
             detect_alliancequestcollectview.cxlist = [0.40625, 0.60375]
@@ -2788,15 +2823,13 @@ class Context:
         stonedepotspentview = Context("stonedepotspentview", stonedepotspentviewbutton, detect_stonedepotspentview)
 
 
-        def find_depotview(debug=True):
+        def find_depotview(template, debug=True):
             scanpath = 'images/results/depotview.png'
             im = MN.full_screen_shot()
             im.save(scanpath, 'PNG')
             if (debug):
-                return IM.match_template_debug(scanpath, ['images/templates/depotviewwide.png',
-                                                          'images/templates/depotviewicon.png'], 'depotview')
-            return IM.match_template(scanpath, ['images/templates/depotviewwide.png',
-                                                'images/templates/depotviewicon.png'])
+                return IM.match_template_debug(scanpath, [template], 'depotview')
+            return IM.match_template(scanpath, [template])
 
         def detect_depotview():
             detect_depotview.cxlist = [0.16875, 0.3575, 0.62875, 0.88, 0.77125, 0.20125, 0.2525, 0.04375, 0.02125,
@@ -2810,7 +2843,8 @@ class Context:
                                       C.Color(34, 30, 21), C.Color(22, 17, 12)]
             return all(map(MN.color_comp, detect_depotview.cxlist, detect_depotview.cylist, detect_depotview.clist))
 
-        depotview = ImageContext("depotview", detect_depotview, find_depotview)
+        depotview = ImageContext("depotview", detect_depotview, find_depotview, ['images/templates/depotviewwide.png',
+                                                          'images/templates/depotviewicon.png'])
 
         def detect_constructionview():
             detect_constructionview.cxlist = [0.3575, 0.61875, 0.94625, 0.83125, 0.80875, 0.08375, 0.53]
@@ -2823,15 +2857,14 @@ class Context:
 
         constructionview = Context("constructionview", None, detect_constructionview)
 
-        def find_dailyrewardsview(debug=False):
+        def find_dailyrewardsview(template, debug=False):
             scanpath = 'images/results/dailyrewardsview.png'
             im = MN.full_screen_shot()
             im.save(scanpath, 'PNG')
             if (debug):
-                return IM.match_template_debug(scanpath, ['images/templates/dailyrewardview1.png',
-                                                          'images/templates/dailyrewardview2.png'], 'dailyrewardsview')
+                return IM.match_template_debug(scanpath, [template], 'dailyrewardsview')
             return IM.match_template(scanpath,
-                                     ['images/templates/dailyrewardview1.png', 'images/templates/dailyrewardview2.png'])
+                                     [template])
 
         def detect_dailyrewardsview():
             detect_dailyrewardsview.cxlist = []
@@ -2840,23 +2873,23 @@ class Context:
             return all(map(MN.color_comp, detect_dailyrewardsview.cxlist, detect_dailyrewardsview.cylist,
                            detect_dailyrewardsview.clist))
 
-        dailyrewardsview = ImageContext("dailyrewardsview", detect_dailyrewardsview, find_dailyrewardsview)
+        dailyrewardsview = ImageContext("dailyrewardsview", detect_dailyrewardsview, find_dailyrewardsview, ['images/templates/dailyrewardview1.png',
+                                                          'images/templates/dailyrewardview2.png'])
 
 
-        def find_alliancehelpbirdview(debug=True):
+        def find_alliancehelpbirdview(template, debug=True):
             scanpath = 'images/results/alliancehelpbirdview.png'
             im = MN.full_screen_shot()
             im.save(scanpath, 'PNG')
             if (debug):
-                return IM.match_template_debug(scanpath, ['images/templates/alliancehelpbird.png',
-                                                          'images/templates/alliancehelpbirdwide.png'],
+                return IM.match_template_debug(scanpath, [template],
                                                'alliancehelpbirdview', threshold=0.65)
-            return IM.match_template(scanpath, ['images/templates/alliancehelpbird.png',
-                                                'images/templates/alliancehelpbirdwide.png'],threshold=0.65)
+            return IM.match_template(scanpath, [template], threshold=0.65)
 
 
         alliancehelpbirdview = ImageContext("alliancehelpbirdview", None,
-                                            find_alliancehelpbirdview)
+                                            find_alliancehelpbirdview, ['images/templates/alliancehelpbird.png',
+                                                'images/templates/alliancehelpbirdwide.png'])
 
         cityview.add_connection(stonequarryview)
         cityview.add_connection(ironmineview)
@@ -3127,12 +3160,13 @@ class Context:
         return phonehomescreen
 
 class ImageContext(Context):
-    def __init__(self, name, detector, find):
+    def __init__(self, name, detector, find, templates):
         Context.__init__(self, name, None, detector)
         self.find = find
         self.coordlist = []
         self.buttonlist = []
         self.buttonindex = 0
+        self.templates = templates
 
     @staticmethod
     def create_clickfunc(x, y):
@@ -3145,8 +3179,8 @@ class ImageContext(Context):
             MN.click_screen_loc_fast(x, y)
         return clickfunc
 
-    def create_buttons(self, debug=False):
-        self.coordlist = self.find()
+    def create_buttons(self, template, debug=False):
+        self.coordlist = self.find(template)
         coordlistlen = len(self.coordlist)
         if(coordlistlen>0):
             self.buttonlist = []
@@ -3170,13 +3204,13 @@ class ImageContext(Context):
             return 0
 
     def next_button(self):
-        self.buttonindex += 1
         self.button = self.buttonlist[self.buttonindex]
+        self.buttonindex += 1
     def next(self):
         return self.next_button()
 
     def has_next(self):
-        return self.buttonindex < len(self.buttonlist)-1
+        return self.buttonindex < len(self.buttonlist)
 
     def hasnextbutton(self):
         return self.has_next()
@@ -3199,14 +3233,17 @@ class ImageContext(Context):
             Context.click_button(self)
 
     def click_all(self, homecontext = None, debug = False):
-        nbuttons = self.create_buttons(debug=debug)
-        while (self.hasnextbutton()):
-            self.click_button()
-            self.next_button()
-        if(homecontext != None):
-            if (not homecontext.detect()):
-                homecontext.waitforload(timeout=1)
-        return nbuttons
+        total_clicks = 0
+        for template in self.templates:
+            n_template_buttons = self.create_buttons(template,debug=debug)
+            while (self.hasnextbutton()):
+                self.click_button()
+                self.next_button()
+            if(homecontext != None):
+                if (not homecontext.detect()):
+                    homecontext.waitforload(timeout=3)
+            total_clicks += n_template_buttons
+        return total_clicks
 
 
 
@@ -3261,6 +3298,7 @@ class ConditionalContext(Context):
         return detected
 
     def waitforload(self, timeout = 5, ontimeout = None):
+        print('choose waitforload')
         while(not self.choose()):
             if (Context.detect_camelloadingscreen()):
                 print('detected camelloadingscreen')
@@ -3279,6 +3317,8 @@ class ConditionalContext(Context):
                         print('waiting for ' + self.getname() + ' load... ' + str(timeout))
                 else:
                     print(self.getname() + ' timed out!')
+                    debug_im = MN.full_screen_shot()
+                    debug_im.save(self.getname() + str(random.randint(0,100)) +'-timeout.png')
                     if (ontimeout == None):
                         self.return_context()
                         return self.waitforload()

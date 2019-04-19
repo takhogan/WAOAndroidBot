@@ -541,7 +541,7 @@ def accountview_to_googleplayloginview(accountview):
     switchaccountview.waitforload()
     googleplayloginview = switchaccountview.get_connection('googleplayloginview')
     googleplayloginview.click_button()
-    googleplayloginview.waitforload()
+    googleplayloginview.waitforload(timeout=20)
     return googleplayloginview
 
 def switch_account(cityview, farmname):
@@ -822,7 +822,6 @@ def process_elitegather(cityview):
 
 
 
-
 def process_account(cityview, farmname, switchaccount = True):
     if(switchaccount):
         cityview = switch_account(cityview, farmname)
@@ -830,12 +829,12 @@ def process_account(cityview, farmname, switchaccount = True):
     # process_keprotocol(cityview)
     # process_full_battlerebels(cityview)
     # process_donation(cityview)
-    # process_mailrewards(cityview)
+    process_mailrewards(cityview)
     # process_full_battlerebels(cityview)
-    process_harvestskill(cityview)
-    zoom_out()
+    # process_harvestskill(cityview)
+    # zoom_out()
     # process_buildingrewards(cityview)
-    process_collectionbuildings(cityview)
+    # process_collectionbuildings(cityview)
     # process_full_battlerebels(cityview)
 
 def process_accounts(cityview, start = 0):
@@ -883,7 +882,7 @@ def default_process(start=0):
 
 if __name__=='__main__':
     # test_map_manager()
-    start = 0
+    start = 3
     default_process(start)
 
 
